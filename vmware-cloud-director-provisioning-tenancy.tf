@@ -13,9 +13,9 @@ variable "org_user_password"      { default = "change-me" }          # Password 
 variable "org_user_description"   { default = ""}                    # Description for Organization user
 
 
-variable "cpu_allocated"          { default = "" } # vCPU in MHz              # Allocation of vCPU in MHz
-variable "memory_allocated"       { default = "" } # Memory in GB             # Allocation of RAM in GB 
-variable "storage_allocated"      { default = "" } # Storage in GB            # Allocation of Storage in GB 
+variable "cpu_allocated"          { default = "" }       # Allocation of vCPU in MHz
+variable "memory_allocated"       { default = "" }       # Allocation of RAM in GB 
+variable "storage_allocated"      { default = "" }       # Allocation of Storage in GB 
 
 
 variable "edgegateway_primaryip"    { default = ""}       # Primary Public IP for Edge Gateway
