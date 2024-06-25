@@ -1,24 +1,26 @@
 ## DECLARE VARIABLE
 
-variable "org_name"               { default = "ORG-TIKTOK" }                        # Name for Organization
-variable "orgvdc_name"            { default = "ORGVDC-TIKTOK" }                     # Name for Organization Virtual Datacenter
-variable "org_full_name"          { default = "CÔNG TY CỔ PHẦN TIKTOK VIỆT NAM" }   # Description for Organization and Organization Virtual Datacenter
-variable "edgegateway_name"       { default = "EDGE-TIKTOK-01" }                    # Name for Edge Gateway
+variable "vcd_provider_password"  { default = "" }       # Password for Terraform Account
+
+variable "org_name"               { default = "ORG-XXX" }            # Name for Organization
+variable "orgvdc_name"            { default = "ORGVDC-XXX" }         # Name for Organization Virtual Datacenter
+variable "org_full_name"          { default = "" }                   # Description for Organization and Organization Virtual Datacenter
+variable "edgegateway_name"       { default = "EDGE-XXX-01" }        # Name for Edge Gateway
 
 
-variable "org_user_name"          { default = "tiktok_admin" }                      # Name for Organization user
-variable "org_user_password"      { default = "change-me" }                         # Password for Organization user
-variable "org_user_description"   { default = "Organization Administrator"}         # Description for Organization user
+variable "org_user_name"          { default = "XXX_admin" }          # Name for Organization user
+variable "org_user_password"      { default = "change-me" }          # Password for Organization user
+variable "org_user_description"   { default = ""}                    # Description for Organization user
 
 
-variable "cpu_allocated"          { default = "8000" } # vCPU in MHz                # Allocation of vCPU in MHz
-variable "memory_allocated"       { default = "16384" } # Memory in GB              # Allocation of RAM in GB 
-variable "storage_allocated"      { default = "204800" } # Storage in GB            # Allocation of Storage in GB 
+variable "cpu_allocated"          { default = "" } # vCPU in MHz              # Allocation of vCPU in MHz
+variable "memory_allocated"       { default = "" } # Memory in GB             # Allocation of RAM in GB 
+variable "storage_allocated"      { default = "" } # Storage in GB            # Allocation of Storage in GB 
 
 
-variable "edgegateway_primaryip"    { default = "103.141.177.230"}                  # Primary Public IP for Edge Gateway
-variable "edgegateway_startip"      { default = "103.141.177.226"}                  # Additional Public IP for Edge Gateway
-variable "edgegateway_endip"        { default = "103.141.177.227"}                  # Additional Public IP for Edge Gateway
+variable "edgegateway_primaryip"    { default = ""}       # Primary Public IP for Edge Gateway
+variable "edgegateway_startip"      { default = ""}       # Additional Public IP for Edge Gateway
+variable "edgegateway_endip"        { default = ""}       # Additional Public IP for Edge Gateway
 
 
 #=================================================================================#
