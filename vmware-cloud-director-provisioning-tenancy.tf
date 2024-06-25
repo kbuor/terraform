@@ -28,7 +28,6 @@ variable "edgegateway_endip"        { default = ""}       # Additional Public IP
 ## CONTACT MR. LUAN OR MR. KBUOR FOR MORE DETAIL                                  #
 #---------------------------------------------------------------------------------#
 variable "vcd_provider_user"      { default = "terraform" }                       #
-variable "vcd_provider_password"  { default = "anLOtJDEf2esMPYd3gI9M3Fm" }        #
 variable "vcd_url"                { default = "https://console.tpcloud.vn/api" }  #
 variable "org_user_role"          { default = "Organization Administrator"}       #
 variable "provider_vdc_name"      { default = "TPCOMS-PROVIDER-VDC-01"}           #
